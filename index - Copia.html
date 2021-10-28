@@ -1,0 +1,61 @@
+<link rel="stylesheet" href="tailwind.css">
+<link rel="stylesheet" href="format.css">
+
+<div class="container my-5 mx-auto" id="app">
+<!-- titulos -->
+# Title large
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quam leo, tincidunt vitae elit sit amet, placerat placerat nisl. Nulla mauris quam, malesuada non tempor et, mollis in libero. 
+## Title medium
+Ut tempor augue ante, et semper ex molestie ac. Morbi ex lorem, lacinia eu ex at, ultrices rhoncus diam. Cras imperdiet et libero nec sodales. 
+### Title small
+Cras mattis sed lacus quis imperdiet. In commodo porta bibendum. Praesent turpis tortor, sodales sit amet viverra in, tempor eu mauris. Cras pulvinar molestie sapien nec porta. Aenean arcu dui, aliquam non ex vitae, venenatis cursus arcu. Mauris tempus tortor quis sodales bibendum.
+
+### Quotes
+
+(( This quote, along with the infamous "Insanity: doing the))
+
+<!-- Marcações -->
+### Marcações com @
+As @ marcações @ devem ser feitas com arroba.
+
+### Formatação de textos
+{{
+. ~ taxado ~ .          .~taxado~.
+. _ sublinhado _ .      ._sublinhado_.
+. * negrito * .         .*negrito*.
+. __ italico __ .       .__italico__.
+}}
+
+### Símbolos lógicos
+Juntando os @símbolos@ vira uma proposição composta.
+{{
+    ^   E                   Conjunção
+    v   OU                  Disjunção inclusiva
+    →   SE ENTÃO            Condicional
+    ↔   SE SOMENTE SE       Bicondicional
+    ⊻   OU OU               Disjunção exclusiva
+}}
+
+### Proposições compostas
+
+{{
+    P ^ Q : Maria come bolo {E} João não bebe água
+    P v Q : Maria come bolo {OU} João não bebe água
+    P → Q : {SE} Maria come bolo {ENTÃO} João não bebe água
+    P ↔ Q : Maria come bolo {SE SOMENTE SE} João não bebe água
+    P ⊻ Q : {OU} Maria come bolo {OU} João não bebe água
+}}
+
+### Tabela verdade
+{{
+    Tabela verdade
+    P	Q	  P ^ Q	    P v Q	    P→Q	        P↔Q	        P⊻Q
+    V	V	    V	      V	         V	         V	         F
+    V	F	    F	      V	         F	         F	         V
+    F	V	    F	      V	         V	         F	         V
+    F	F	    F	      F	         V	         V	         F
+}}
+
+</div>
+
+<script src="js.js"></script>

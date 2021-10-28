@@ -1,0 +1,80 @@
+# Raciocício lógico
+### Símbolos lógico
+{{
+^   E                   Conjunção
+v   OU                  Disjunção inclusiva
+→   SE ENTÃO            Condicional
+↔   SE SOMENTE SE       Bicondicional
+⊻   OU OU               Disjunção exclusiva
+}}
+
+### Símbolos de negação
+{{
+¬       ¬P
+~       ~P
+'       P'
+}}
+
+### Proposição simples
+{{
+P: Maria come bolo
+Q: João não bebe água
+
+¬P: Maria não come bolo
+¬Q: João bebe água
+}}
+
+### Proposição Composta
+{{
+P ^ Q : Maria come bolo {E} João não bebe água
+P v Q : Maria come bolo {OU} João não bebe água
+P → Q : {SE} Maria come bolo {ENTÃO} João não bebe água
+P ↔ Q : Maria come bolo {SE SOMENTE SE} João não bebe água
+P ⊻ Q : {OU} Maria come bolo {OU} João não bebe água
+}}
+
+### Tabela verdade
+{{
+P	Q	  P ^ Q	    P v Q	    P→Q	        P↔Q	        P⊻Q
+V	V	    V	      V	         V	         V	         F
+V	F	    F	      V	         F	         F	         V
+F	V	    F	      V	         V	         F	         V
+F	F	    F	      F	         V	         V	         F
+}}
+
+### Negação e Equivalência (contrapositiva)
+{{
+Negação
+    P ^ Q : ¬P v ¬Q
+    P v Q : ¬P ^ ¬Q
+    P → Q : P ^ Q'
+    P ↔ Q : P ⊻ Q
+    P ⊻ Q : P ↔ Q
+
+Equivalência
+    P ^ Q : Q ^ P
+    P v Q : Q v P
+    P → Q : ¬P v Q         ¬Q → ¬P
+    P ↔ Q : Q ↔ P
+    P ⊻ Q : Q ⊻ P
+}}
+
+### Outros
+{{
+Tauntologia = Todos os resultado da tabela verdade = V
+Contradição = Todos os resultado da tabela verdade = F
+Contingência = Todos os resultado da tabela verdade = V / F
+}}
+### Quantificadores universais
+{{
+Negação
+    Todo A é B
+        Pelo menos um A não é B
+        Existe algum A que não é B
+        Alguma A não é B
+    Nenhum A é B
+        Pelo menos um A é B
+        Existe algum A que é B
+        Alguma A é B
+}}
+

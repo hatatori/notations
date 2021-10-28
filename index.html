@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="tailwind.css">
+<link rel="stylesheet" href="format.css">
+
+<div class="container my-5 mx-auto" id="app"></div>
+
+<script src="js.js"></script>
+
+<script>
+    file = window.location.href.split("#").pop()
+    file = file+".txt"
+    fetch(file).then(e=>e.text())
+    .then(e=>{app.innerHTML = e; render()} )
+    
+</script>

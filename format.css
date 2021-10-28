@@ -1,0 +1,23 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    width: 800px;
+    max-width: 100%;
+    /* margin: auto; */
+    max-width: 80%;
+}
+
+.consolas{
+    font-family:consolas;
+    color: #6e7781;
+}
+
+.mark{
+    padding: 0.05em 0.4em;
+    margin: 0;
+    background-color: #eee;
+    border-radius: 3;
+    display: inline-block;
+    border-radius: 3px;
+}
