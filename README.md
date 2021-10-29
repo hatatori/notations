@@ -1,2 +1,2 @@
 # notations
-https://hatatori.github.io/notations#rlm
+https://hatatori.github.io/notations?rlm
