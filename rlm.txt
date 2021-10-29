@@ -1,5 +1,6 @@
-# Raciocício lógico
-### Símbolos lógico
+#1 Raciocício lógico
+#3 Símbolos lógico
+
 {{
 ^   E                   Conjunção
 v   OU                  Disjunção inclusiva
@@ -8,14 +9,14 @@ v   OU                  Disjunção inclusiva
 ⊻   OU OU               Disjunção exclusiva
 }}
 
-### Símbolos de negação
+#3 Símbolos de negação
 {{
 ¬       ¬P
 ~       ~P
 '       P'
 }}
 
-### Proposição simples
+#3 Proposição simples
 {{
 P: Maria come bolo
 Q: João não bebe água
@@ -24,25 +25,29 @@ Q: João não bebe água
 ¬Q: João bebe água
 }}
 
-### Proposição Composta
+#3 Proposição Composta
 {{
-P ^ Q : Maria come bolo {E} João não bebe água
-P v Q : Maria come bolo {OU} João não bebe água
-P → Q : {SE} Maria come bolo {ENTÃO} João não bebe água
-P ↔ Q : Maria come bolo {SE SOMENTE SE} João não bebe água
-P ⊻ Q : {OU} Maria come bolo {OU} João não bebe água
+P ^ Q : Maria come bolo [_E_] João não bebe água
+P v Q : Maria come bolo [_OU_] João não bebe água
+P ⇒ Q : {SE} Maria come bolo [_ENTÃO_] João não bebe água
+P ↔ Q : Maria come bolo [_SE SOMENTE SE_] João não bebe água
+P ⊻ Q : [_OU_] Maria come bolo [_OU_] João não bebe água
 }}
 
-### Tabela verdade
+#3 Tabela verdade
 {{
-P	Q	  P ^ Q	    P v Q	    P→Q	        P↔Q	        P⊻Q
-V	V	    V	      V	         V	         V	         F
-V	F	    F	      V	         F	         F	         V
-F	V	    F	      V	         V	         F	         V
-F	F	    F	      F	         V	         V	         F
+P	Q       P ^ Q       P v Q       P→Q     P↔Q     P⊻Q
+V	V         V	          V	         V	     V	     F
+V	F         F	          V	         F	     F	     V
+F	V         F	          V	         V	     F	     V
+F	F         F	          F	         V	     V	     F
 }}
 
-### Negação e Equivalência (contrapositiva)
+[[
+    O E só será verdade se [!eita!]
+]]
+
+#3 Negação e Equivalência (contrapositiva)
 {{
 Negação
     P ^ Q : ¬P v ¬Q
@@ -59,13 +64,13 @@ Equivalência
     P ⊻ Q : Q ⊻ P
 }}
 
-### Outros
+#3 Outros
 {{
 Tauntologia = Todos os resultado da tabela verdade = V
 Contradição = Todos os resultado da tabela verdade = F
 Contingência = Todos os resultado da tabela verdade = V / F
 }}
-### Quantificadores universais
+#3 Quantificadores universais
 {{
 Negação
     Todo A é B

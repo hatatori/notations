@@ -1,56 +1,89 @@
-
 function render(){
-app.innerHTML = app.innerHTML
-    .replace(/^# .+/gm,e=>h1(e))
-    .replace(/^## .+/gm,e=>h2(e))
-    .replace(/^### .+/gm,e=>h3(e))
-    .replace(/@.+?@/gm,e=>mark(e))
-    .replace(/\{\{/gm,"<pre class='my-3'>").replace(/\}\}/gm,"</pre>")
-    .replace(/\._(?!_).+?_\./gm,e=>underline(e))
-    .replace(/\.\*(?!\*).+?\*\./gm,e=>bold(e))
-    .replace(/\.~(?!~).+?~\./gm,e=>tach(e))
-    .replace(/\.__.+?__\./gm,e=>italic(e))
-    .replace(/\(\(.+\)\)/g,e=>quotes(e))
-}render()
     
+    app.innerHTML = app.innerHTML
+    .replace(/\[\*(\w|\W)+?\*\]/gm,e=>bold(e))
+    .replace(/\[_(\w|\W)+?_\]/gm,e=>underline(e))
+    .replace(/\[-(\w|\W)+?-\]/gm,e=>italic(e))
+    .replace(/\[~(\w|\W)+?~\]/gm,e=>tach(e))
+    .replace(/\[!(\w|\W)+?!\]/gm,e=>quote(e))
+    .replace(/{{.+?}}/gms,e=>pre(e))
+    .replace(/\[\[.+?\]\]/gms,e=>square(e))
 
-function h1(str){
-    str = str.split("# ")[1]
-    return `<div class="font-bold text-4xl m-b-2 my-3 border-solid border-b border-y-2 py-3 w-full">${str}</div>`
-}
-    
-function h2(str){
-    str = str.split("## ")[1]
-    return `<div class="font-bold text-3xl m-b-2 my-3 border-solid border-b border-y-2 py-3 w-full">${str}</div>`
-}
+    .replace(/#1 .+?\n/g,e=>`<div class='text-4xl pb-2 my-4 border-b semibold'>${e.slice(3)}</div>`)
+    .replace(/#2 .+?\n/g,e=>`<div class='text-3xl pb-2 my-4 border-b semibold'>${e.slice(3)}</div>`)
+    .replace(/#3 .+?\n/g,e=>`<div class='text-2xl pb-2 my-4 border-b semibold'>${e.slice(3)}</div>`)
+    .replace(/#4 .+?\n/g,e=>`<div class='text-xl  pb-2 my-4 border-b semibold'>${e.slice(3)}</div>`)
 
-function h3(str){
-    str = str.split("### ")[1]
-    return `<div class="font-bold text-2xl m-b-2 my-3 border-solid border-b border-y-2 py-3 w-full">${str}</div>`
-}
+    .replace(/#i .+?($|\n)/g,e=>imagem(e))
 
-function quotes(str){
-    // str = ">>alguma coisa<<"
-    // return str.replace(/>>/g,"<span class='consolas'>").replace(/<</g,"</span>")
-    return str.replace(/\(\(/g,"<span class='consolas'>").replace(/\)\)/g,"</span>")
-}
+    .replace(/\[@.+?@\]/gms,e=>opennext(e))
 
-function mark(str){
-    return str.replace(/@(.+?)@/g,e=>"<div class='mark'>"+e.slice(1,-1)+"</div>")
+    resto()
+}
+render()
+
+function bold(str){
+    str = str.replace(/\[\*/gm,e=>`<b>`).replace(/\*\]/gm,e=>`</b>`)
+    return str
 }
 
 function underline(str){
-    return str.replaceAll(/\._(?!_).+?_\./gm, e=>"<u>"+e.slice(2,-2)+"</u>")
-}
-
-function bold(str){
-    return str.replaceAll(/\.\*(?!\*).+?\*\./gm, e=>"<b>"+e.slice(2,-2)+"</b>")
-}
-
-function tach(str){
-    return str.replaceAll(/\.~(?!~).+?~\./gm, e=>"<s>"+e.slice(2,-2)+"</s>")
+    str = str.replace(/\[_/gm,e=>`<u>`).replace(/_\]/gm,e=>`</u>`)
+    return str
 }
 
 function italic(str){
-    return str.replaceAll(/\.__.+?__\./gm, e=>"<i>"+e.slice(3,-3)+"</i>")
+    str = str.replace(/\[-/gm,e=>`<i>`).replace(/-\]/gm,e=>`</i>`)
+    return str
 }
+
+function tach(str){
+    str = str.replace(/\[~/gm,e=>`<s>`).replace(/~\]/gm,e=>`</s>`)
+    return str
+}    
+
+function quote(str){
+    str = str.replace(/\[!/gm,e=>`<span class='mark'>`).replace(/!\]/gm,e=>`</span>`)
+    return str
+}
+
+function pre(str){
+    str = str.replace(/{{/gm,e=>`<pre class='my-5'>`).replace(/}}/gm,e=>`</pre>`)
+    return str
+}
+
+function square(str){
+    return str.replace(/\[\[/gm,"<div class='bg-gray-100 rounded p-2'>").replace(/\]\]/gm,"</div>")
+}
+
+function opennext(str){
+    return str
+    .replace(/\[@/g, "<div class='open-next' onclick='this.nextElementSibling.classList.toggle(\"hidden\")' >")
+    .replace(/@\]/g, "</div>")
+    .replace(/-----/g, "</div><div class='hidden'>")
+}
+
+function imagem(str){
+    return str.replace(/#i .+?($|\n)/g,e=>{
+        t = e.split(" ")
+        if(t[2] == undefined) t[2] = 'auto'
+        if(t[3] == undefined) t[3] = 'auto'
+
+        return `<img src='${t[1]}' style="width:${t[2]}; height:${t[3]}">`
+    })
+}
+
+
+
+function resto(){
+    for(i of app.childNodes){
+        if(i.nodeName == "#text"){
+            p = document.createElement("p")
+            p.innerHTML = i.nodeValue
+            next = i.nextSibling
+            app.insertBefore(p,next)
+            i.remove()
+        }
+    }
+}
+

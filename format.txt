@@ -1,0 +1,38 @@
+#1 Documentação simples
+#1 #1
+#2 #2
+#3 #3
+#4 #4
+
+#4 Square
+[ [ Texto ] ]
+[[ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis justo pulvinar, porta magna vel, vestibulum magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. ]]
+
+#4 Font style
+{{
+[ *texto* ]                   [*texto*]
+[ _texto_ ]                   [_texto_]
+[ -texto aqui- ]              [-texto aqui-]
+[ ~texto aqui~ ]              [~texto aqui~]
+[ !eita vamos testando! ]     [!eita vamos testando!]
+}}
+
+#4 Show hide
+[ @
+    Texto 1
+    -----
+    Texto 2
+@ ]
+[@
+    Texto 1
+    -----
+    Texto 2
+@]
+
+#4 Imagem
+
+# i image.jpg w h
+[[ 
+#i https://paintbynumberscanvas.com/wp-content/uploads/2020/10/joker-artwork-paint-by-numbers.jpg 100 
+]]
+

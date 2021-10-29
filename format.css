@@ -1,6 +1,10 @@
 *{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: Segoe UI;
 }
+
+pre{font-family: Consolas;}
+
 .container{
     width: 800px;
     max-width: 100%;
@@ -21,3 +25,5 @@
     display: inline-block;
     border-radius: 3px;
 }
+
+.semibold{ font-family: Segoe UI Semibold;}

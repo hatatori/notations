@@ -6,14 +6,57 @@
 
 
 
-<div class="container my-5 mx-auto" id="app"></div>
+<div class="container my-5 mx-auto" id="app">
+
+#1 efeito
+#2 efeito
+#3 efeito
+#4 efeito
+
+testando
+
+[[
+eita
+]]
+
+{{
+    [*texto*]
+    [_texto_]
+    [-texto aqui-]
+    [~texto aqui~]
+    [!eita vamos testando!]
+}}
+
+testando 2
+
+[
+    @
+    vamos ver alguma coisa
+    @
+    não sei de nada
+    @
+]
+
+</div>
 
 <script src="js.js"></script>
+<!-- 
+<div class="w-1/2 shadow m-auto">
+<div class="p-3 open-next">a</div>
+<div class="p-3 bg-gray-200 hidden">b</div>
+ -->
 
 <script>
-    file = window.location.href.split("#").pop()
+    file = window.location.href.split("?").pop()
     file = file+".txt"
     fetch(file).then(e=>e.text())
     .then(e=>{app.innerHTML = e; render()} )
+
     
-</script>
+    for(i of document.querySelectorAll(".open-next")){
+        i.addEventListener('click',e=>{
+            e.target.nextElementSibling.classList.toggle("hidden")
+        })
+    }
+</script> 
+
