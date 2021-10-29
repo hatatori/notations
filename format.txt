@@ -8,6 +8,12 @@
 [ [ Texto ] ]
 [[ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis justo pulvinar, porta magna vel, vestibulum magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. ]]
 
+{{{
+    vamos testar agora alguma coisa aqui
+
+    eita muito tenso
+}}}
+
 #4 Font style
 {{
 [ *texto* ]                   [*texto*]

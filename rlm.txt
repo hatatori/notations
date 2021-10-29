@@ -43,9 +43,13 @@ F	V         F	          V	         V	     F	     V
 F	F         F	          F	         V	     V	     F
 }}
 
+
 [[
-    O E só será verdade se [!eita!]
+E = Só será verdadeiro se todas forem verdadeiras 
+Ou = Só será falsa se todas forem falsas
+Se Então = Vera fisher é falsa
 ]]
+
 
 #3 Negação e Equivalência (contrapositiva)
 {{

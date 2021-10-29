@@ -6,6 +6,7 @@ function render(){
     .replace(/\[-(\w|\W)+?-\]/gm,e=>italic(e))
     .replace(/\[~(\w|\W)+?~\]/gm,e=>tach(e))
     .replace(/\[!(\w|\W)+?!\]/gm,e=>quote(e))
+    .replace(/{{{.+?}}}/gms,e=>pre2(e))
     .replace(/{{.+?}}/gms,e=>pre(e))
     .replace(/\[\[.+?\]\]/gms,e=>square(e))
 
@@ -52,8 +53,14 @@ function pre(str){
     return str
 }
 
+function pre2(str){
+    return str.replace(/{{{/gm,"<pre class='segoe'>").replace(/}}}/gm,"</pre>")
+}
+
 function square(str){
-    return str.replace(/\[\[/gm,"<div class='bg-gray-100 rounded p-2'>").replace(/\]\]/gm,"</div>")
+    str = str.replace(/\[\[/gm,"<div class='bg-gray-200 my-2 shadow rounded p-2'>").replace(/\]\]/gm,"</div>")
+    console.log(str)
+    return str
 }
 
 function opennext(str){
