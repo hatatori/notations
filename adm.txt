@@ -1,0 +1,81 @@
+#1 Administração
+
+#3 Ministério público
+#4 Princípios aplicados ao MP
+{{{
+    Princípio da unidade
+    Princípio da indivisibilidade
+    Princípio da independência funcional
+    Autonomia administrativa e financeira
+}}}
+
+#4 Administração direta
+{{
+    União
+    Estados
+    Municípios
+    DF
+}}
+
+#4 Administração Indireta
+{{
+    União
+    Estados
+    Municípios
+    DF
+}}
+#1 Autaria
+#4 Autaria
+{{
+    Vinculadas a um órgão da administração pública direta
+    Não são subordinados à administração pública direta
+    Há a necessidade de realização de concurso público
+}}
+
+#4 Palavras chave para marcar autaria
+{{
+    "Pessoa jurídica de direito público"
+    "prestação de serviço autônomo "
+    "atividades típicas da Administração Pública"
+}}
+
+#4 Observações sobre autaquias
+{{
+    Vinculadas a um órgão da administração pública direta
+    Os dirigentes não precisam ser concursados
+    Os servidores são concursados.
+    São criadas por lei e possuem personalidade jurídica
+}}
+
+#4 Exemplos de autarquias
+{{
+    Agência Nacional de Telecomunicações (ANATEL)
+    Instituto Nacional do Seguro Social (INSS)
+    Banco Central do Brasil (BACEN)
+    Instituto Brasileiro de Geografia e Estatística (IBGE)
+    Banco Nacional do Desenvolvimento (BNDES)
+}}
+
+#4 Entidades
+{{
+Entidades adm                           Criação                 Natureza jurídica
+Autarquia                               Criada por lei          D. Público
+Fundação pública de direito público     Criada por lei          D. Público
+Fundação pública de direito privado     Autorizada por lei      D. Privado
+Empresa pública                         Autorizada por lei      D. Público
+Sociedade de economia mista             Autorizada por lei      D. Público
+}}
+
+
+
+#2 Descentralização
+{{
+    Particular      Outorga     Eitularidade e execução     Lei
+    Adm. Indireta   Delegação   Execução                    Contrato adm, ato adm
+}}
+
+{{
+    Concessão
+    Permissão
+    Autorização
+}}
