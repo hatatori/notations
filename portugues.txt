@@ -1,21 +1,179 @@
-Figura de linguagem
+#1 Português
 
-Metonímia - Troca nome pela marca/obra
-Metáfora - Sentido figurado
-Hipérbole - Exagero 
-Eufemismo - Abrandar, tornar mais calmo
-Pleonasmo - Redundância - Subir pra cima
-Paradoxo - Ilógico - As tranças do rei careca
-Onomatopeia - Sons - Toc toc
-Anáfora - repetição - farofa feia feito fumo
-Antítese - Oposto - A vida e morte do jardim
-Personificação - humanizar - O travesseiro me abraçou
-Ironia - Contrário - Que educado, não cumprimentou
-Prosopopeia - Atributos, sentimentos à coisas inanimadas
+#4 Classes de palavras
 
-Neologismo - Criação de palavras
-Assonância - Repetição de fonemas vocálicos
-Aliteração - Repetição de consoantes
-Elipse - Omissão de termo
-Catacrese - Metáfora cristalisada - Asa da xícara, pé do sofá
+{{{
+São divididas em duas [[variáveis]] e [[invariáveis]]
+[[variáveis]]   = Numeral, Adjetivo, Verbo, Artigo, Substantivo , Pronome
+[[invariáveis]] = Preposição, Interjeição, Conjunção, Advérbio
+}}}
 
+#4 Numeral
+{{{
+Ordinal
+Cardinal
+Fracionário
+Multiplicativo
+}}}
+
+[down]
+{{{
+Ordinal - primeiro, segundo, terceiro ... [[ordem]]
+Cardinal - um dois três ... [[quantidade]]
+Fracionário - Um meio, três quartos, dois quintos ... [[proporcionalidade]]
+Multiplicativo - dobro, triplo, quáduplo [[número de vezes]]
+}}}
+
+#4 Adjetivo
+{{{
+Simples
+Composto
+Primitivo
+Derivado
+Pátrio
+}}}
+
+[down]
+
+{{{
+    Simples - [[somente um radical]] - magro
+    Composto - [[mais de um radical]] - rosa-claro
+    Primitivo - [[origem a outros adjetivos]] - triste
+    Derivado - [[foram derivados do primitivo]] - tristonho
+    Pátrio - [[origem ou nacionalidade]] - carioca, paulista
+}}}
+
+
+
+#3 Verbo
+#3 Artigo
+{{{
+    Definido - [[o]] [[as]] [[os]] [[as]]
+    Indefinido - [[um]] [[uma]] [[uns]] [[umas]]
+}}}
+#3 Substantivo
+{{{
+[[4C 2P SD]]
+Comum - casa sapo
+Próprio - pessoas, lugares
+Simples - celular
+Composto - guarda-chuva
+Concreto - pedra
+Abstrato - amor
+Pritivo - ferro, pedra
+Derivado - ferreiro, pedreira
+Coletivo -  população, vara
+}}}
+#3 Pronome
+{{{
+[[RO-PRIDIP]]
+Reto
+Oblíquo
+- Átono
+- Tônico
+
+Possessivo            
+Relativo
+Interrogativo
+Demonstrativo
+Indefinido
+}}}
+
+#4 Conjunções
+{{{
+[[coordenativas]] - [[(3ACE)]]
+Alternativa
+Aditiva
+Adversativa
+Conclusiva
+Explicativa
+
+[[Subordinativa]] - [[(5c - FTP)]]
+Comparação
+Causal
+Concessiva
+Condicional
+Conformativa
+Final
+Temporal
+Propocional
+}}}
+[down]
+{{{
+    [[coordenativas]] - [[(3ACE)]]
+        Aditiva - Pedro é educado [[e]] gentil
+        Alternativa - [[Ou]] você estuda, [[ou]] trabalha
+        Adversativa - Não se esforçou, [[porém]] tirou boa nota
+        Conclusiva - Possui bom histórico, [[logo]] ficará empregado
+        Explicativa - Não compareci à festa [[porque]] não fui convidada
+
+    [[Subordinativa]] - [[(5c - FTP)]]
+        Comparação - Julia era [[tão]] linda [[quanto]] Joana
+        Causal - [[Como]] estava frio, resolvemos adiar o passeio
+        Concessiva - [[Embora]] fosse manhã, comi bolo
+        Condicional - [[Se]] vou para casa, [[então]] durmo tranquilo
+        Conformativa - [[Conforme]] Joana, maria dormiu cedo
+        Final - Estudo bastante, [[a fim de que]] eu possa comprar este carro
+        Temporal - [[Quando]] chegar de viagem, avise-me
+        Propocional - [[Quanto]] mais como, mais engordo
+
+    [[coordenativas]] - [[(3ACE)]]
+        Aditiva - e, nem , mas também, como também, bem como
+        Adversativa - mas, porém, todavida, contudo, entretanto
+        Alternativa - ou...ou..., ora...ora..., quer... quer...
+        Conclusiva - logo, portanto, por isso, assim, por conseguinte
+        Explicativa - que, porque, porquanto, pois
+
+
+    [[Subordinada]]
+            Comparação - como, tal qual, que ou do que, assim como, mais que, menos que, menos
+            Causal - porque, uma vez que, sendo que, visto que, como
+            Concessiva - mesmo que, por mais que, ainda que, se bem que, embora
+            Condicional - se, caso, contanto que, a menos que, salvo se
+            Conformativa - coforme, segundo, consoante, assim como
+            Final - a fim de que, para que
+            Temporal - quando, enquanto, sempre que, logo que, depois que
+            Propocional - à medida que, à proporção que, quanto mais, quanto menos
+}}}
+
+
+#2 Fíguras de linguagem
+Alegoria, Aliteração, Ambiguidade ou Anfibologia, Analogia, Antonomásia, Anáfora, Apóstrofe,Alusão, Assonância, Cacofonia, Catacrese, Elipse, Eufemismo, Hipérbato ou Inversão, Hipérbole, Metonímia, Metáfora, Onomatopeia, Paradoxo,Gradação ou Clímax, Paronomásia, Personificação ou Prosopopeia,Ironia, Perífrase, Pleonasmo, Polissíndeto,Assíndeto,Anacoluto,Antítese, Quiasmo, Silepse, Simbologia, Sinestesia, Símile ou Comparação, Zeugma
+[down]
+{{{
+1. Metáfora - Lúdico -  "Você é luz, é raio, estrela e luar"
+2. Símile ou Comparação - Comparar - "Maria é mais alta que ana"
+3. Analogia - Semelhança - "Para as pessoas, o motor de um avião é como de um carro"
+4. Metonímia - Nome pela marca - "Passa bom bril que limpa"
+5. Perífrase - Referência - "A cidade luz é bela" : "cidade luz" = París
+6. Sinestesia - Mistura de sensações - Eu quero ouvir a cor dos passarinhos
+7. Hipérbole - Exagero - Estou morrendo de fome
+8. Catacrese - A manga da camisa rasgou
+9. Eufemismo - Acalmar - 
+10. Pleonasmo - Redundância - Subir pra cima 
+11. Anáfora - Enfatisar a repetição palavras - "É {preciso} pagar as dívidas, é {preciso} esquecer, é {preciso} correr"
+12. Ambiguidade ou Anfibologia - Duplo sentido -  O policial prendeu o homem em sua casa : Em que casa?
+13. Antonomásia - Substituição de pessoas ou objetos  - Rainha do Pop (Madona), Rei do Futebol (Pelé)
+14. Alegoria - Não precisa ser expressa no texto (pintura, escultura) - Diz-se {A} para significar {a}
+15. Simbologia - Símbolos
+16. Elipse - omissão de um termo da - A tarde talvez fosse azul, não houvesse tantos desejos.
+17. Zeugma - Omissão de um termo já expresso - Cristina jogava volei, eu futebol
+18. Silepse - Palavra que concorda com a ideia - O casal viajou pela europa e tiraram muitas fotos
+19. Hipérbato ou Inversão - Está pronta a comida / A comida está pronta (concordância a ideia, não o subs.)
+20. Polissíndeto
+21. Assíndeto
+22. Anacoluto
+23. Antítese - De um lado {riqueza}, de outro, {probreza}
+24. Paradoxo
+25. Gradação ou Clímax - aumento ou diminuição de forma gradual - Andou, correu, 
+26. Personificação ou Prosopopeia
+27. Ironia - uma coisa com intenção de dizer outra  - Olha quem chegou! Chegou nem um pouco atrasada.
+28. Apóstrofe
+29. Alusão - Mensão ou citação - Hiroshima traz lembrança
+30. Quiasmo - Troca cruzada - A língua é como espada : A espada é como a língua
+31. Cacofonia - Junção soam desagradavelmente - Por ser tão tarde, vou-me já.
+32. Onomatopeia - Sons - Toc Toc
+33. Aliteração - Repetição de sons (consoante) - A brisa do Brasil é como brasa
+34. Assonância - Repetição de sons (vogais) - Aonde anda a onda
+35. Paronomásia - Repetição de palavras parecidas - Sempre ceder, sem preceder
+}}}

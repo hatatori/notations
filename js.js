@@ -1,6 +1,11 @@
 function render(){
     
     app.innerHTML = app.innerHTML
+    .replace(/#1.+/g,e=>`<div class='text-4xl pb-2 my-4 border-b semibold'>${e.slice(3)}</div>`)
+    .replace(/#2.+/g,e=>`<div class='text-3xl pb-2 my-4 border-b semibold'>${e.slice(3)}</div>`)
+    .replace(/#3.+/g,e=>`<div class='text-2xl pb-2 my-4 border-b semibold'>${e.slice(3)}</div>`)
+    .replace(/#4.+/g,e=>`<div class='text-xl  pb-2 my-4 border-b semibold'>${e.slice(3)}</div>`)
+
     .replace(/\[\*(\w|\W)+?\*\]/gm,e=>bold(e))
     .replace(/\[_(\w|\W)+?_\]/gm,e=>underline(e))
     .replace(/\[-(\w|\W)+?-\]/gm,e=>italic(e))
@@ -9,17 +14,16 @@ function render(){
     .replace(/{{{.+?}}}/gms,e=>pre2(e))
     .replace(/{{.+?}}/gms,e=>pre(e))
     .replace(/\[\[.+?\]\]/gms,e=>square(e))
-
-    .replace(/#1 .+?\n/g,e=>`<div class='text-4xl pb-2 my-4 border-b semibold'>${e.slice(3)}</div>`)
-    .replace(/#2 .+?\n/g,e=>`<div class='text-3xl pb-2 my-4 border-b semibold'>${e.slice(3)}</div>`)
-    .replace(/#3 .+?\n/g,e=>`<div class='text-2xl pb-2 my-4 border-b semibold'>${e.slice(3)}</div>`)
-    .replace(/#4 .+?\n/g,e=>`<div class='text-xl  pb-2 my-4 border-b semibold'>${e.slice(3)}</div>`)
+    .replace(/\[down\]/gms,e=>btDown(e))
+    
+    .replace(/&lt;\[(.+?)\]\[(.+?)\]&gt;/gm,e=>toAlert(e))
 
     .replace(/#i .+?($|\n)/g,e=>imagem(e))
 
     .replace(/\[@.+?@\]/gms,e=>opennext(e))
 
-    resto()
+    alertAll()
+    hiddenAll()
 }
 render()
 
@@ -49,7 +53,7 @@ function quote(str){
 }
 
 function pre(str){
-    str = str.replace(/{{/gm,e=>`<pre class='my-5'>`).replace(/}}/gm,e=>`</pre>`)
+    str = str.replace(/{{/gm,e=>`<pre class='my-5 overflow-auto'>`).replace(/}}/gm,e=>`</pre>`)
     return str
 }
 
@@ -58,8 +62,7 @@ function pre2(str){
 }
 
 function square(str){
-    str = str.replace(/\[\[/gm,"<div class='bg-gray-200 my-2 shadow rounded p-2'>").replace(/\]\]/gm,"</div>")
-    console.log(str)
+    str = str.replace(/\[\[/gm,"<div class='bg-gray-100 inline-block shadow rounded m-1 p-2 py-1'>").replace(/\]\]/gm,"</div>")
     return str
 }
 
@@ -80,17 +83,28 @@ function imagem(str){
     })
 }
 
-
-
-function resto(){
-    for(i of app.childNodes){
-        if(i.nodeName == "#text"){
-            p = document.createElement("p")
-            p.innerHTML = i.nodeValue
-            next = i.nextSibling
-            app.insertBefore(p,next)
-            i.remove()
-        }
-    }
+function toAlert(str){
+    // str = "<[vamosver][ver alguma coisa]>"
+    return str.replace(/&lt;\[(.+?)\]\[(.+?)\]&gt;/,`<span class='sobre'>$1<span>$2</span></span>`).replace(/\"/g,"\'")
 }
 
+function btDown(str){
+    // str = "<[vamosver][ver alguma coisa]>"
+    return str.replace(/\[down\]/g,e=>`<div class="open-next hover:bg-gray-200 cursor-pointer my-1 rounded" onclick="this.nextElementSibling.classList.toggle(&quot;hidden&quot;)"><img class="m-auto" src="down.svg"></div>`)
+}
+
+// outras
+
+function alertAll(){
+    x = [...document.querySelectorAll("[alert]")]
+    x.map(e=>{
+        e.addEventListener('click',g=>{
+            alert2(e.getAttribute('alert'))
+            console.log(e.getAttribute('alert'))
+        })
+    })
+}
+
+function hiddenAll(){
+    [...document.querySelectorAll(".open-next")].map(e=>e.nextElementSibling.classList.add('hidden'))
+}

@@ -21,6 +21,7 @@
 [ -texto aqui- ]              [-texto aqui-]
 [ ~texto aqui~ ]              [~texto aqui~]
 [ !eita vamos testando! ]     [!eita vamos testando!]
+[#vamos ver = veralguma coisa#]
 }}
 
 #4 Show hide
@@ -34,6 +35,9 @@
     -----
     Texto 2
 @]
+
+#2 Informativo
+<[Metáfora][ Lúdico -  "Você é luz, é raio, estrela e luar"]>,
 
 #4 Imagem
 

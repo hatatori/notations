@@ -29,3 +29,28 @@ pre{font-family: Consolas;}
 }
 
 .semibold{ font-family: Segoe UI Semibold;}
+
+.sobre{
+    border-bottom: 1px solid;
+    border-color: #00000022;
+    cursor: pointer;
+    position: relative;
+}
+
+.sobre:hover span{
+    display: block;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+    border: solid 1px black;
+    z-index: 3;
+    padding:5px 10px;
+    min-width: auto;
+    white-space: nowrap;
+    top: 100%;
+}
+
+.sobre > span{
+    position: absolute;
+    display: none;
+}
